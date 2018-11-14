@@ -6,6 +6,12 @@ let quotes = [
 
 let index = 0
 
+function addAQuote(newQuote){
+    console.log('in addQuote', newQuote);
+    quotes.push(newQuote);
+    return 'ribbit';
+} // end addQuote
+
 // return one quote
 // not the same every
 function getQuote(){
@@ -19,4 +25,4 @@ index = 0;
 return quoteToReturn;
 }
 
-module.exports = getQuote;
+module.exports = { getQuoteNow: getQuote, addAQuoteNow: addAQuote }
